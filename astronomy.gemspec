@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.name           = 'astronomy'
   spec.version        = '0.0.0'
   spec.date           = '2014-02-26'
-  spec.description    = %q{Astronomy is a library for handling astronomical simulations and calculations in ruby}
+  spec.description    = %q{Library for astronomical and calculations in ruby}
   spec.summary        = 'Astronomical calculations library'
   spec.authors        = ['Matt Gates']
   spec.homepage       = 'https://github.com/mattgates5/astronomy'
