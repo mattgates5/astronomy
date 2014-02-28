@@ -1,4 +1,4 @@
-# ephemeris.rb
+# orbital.rb
 #
 # module for describing orbital characteristics
 # and Keplerian elements
