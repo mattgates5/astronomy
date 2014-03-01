@@ -3,10 +3,21 @@
 # module for describing orbital characteristics
 # and Keplerian elements
 
+# Ephemeris should be set to Epoch J2000
+
 module OrbitalCharacteristics
-  attr_accessor :aphelion, :perihelion,
+
+  # Base attributes
+  attr_accessor :apsis, :periapsis,
                 :semimajor_axis, :eccentricity,
-                :period, :mean_anomaly,
-                :inclination, :ascending_node,
-                :perihelion_argument
+                :period, :anomaly, :inclination,
+                :ascending_node, :perihelion_argument
+                :rotational_period
+
+  # Derived attributes
+  def velocity
+    ( 2 * Math::PI * @semimajor_axis ) / @period
+  end
+
+
 end
